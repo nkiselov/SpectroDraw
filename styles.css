@@ -1,0 +1,21 @@
+body{
+    height: calc(100% - 8px);
+    margin: 4px;
+}
+
+canvas{
+    background-color: black;
+    image-rendering: pixelated;
+}
+
+.hbox{
+    display: flex;
+    flex-direction: row;
+    gap:4px;
+}
+
+.vbox{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
