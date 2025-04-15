@@ -18,7 +18,7 @@ let compBtn = makeButton("Compute",()=>{
     let hspec = addHarmonicStacks(spec,8,200)
     hmSpec.setArray(hspec)
     hspec = hspec.map(v=>v.map(x=>Math.exp(5*x)-1))
-    let audio = griffinLim(hspec,fftSize,64,10)
+    let audio = griffinLim(hspec,fftSize,64,5)
     audio = normalizeAudio(audio)
     audioView.setAudio(audio)
 })
